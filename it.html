@@ -4,13 +4,14 @@
     <meta name="viewport" content="width=device-width" initial-scale="1.0"/>
     <meta content="text/html; charset=UTF-8"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <link href="css/style.css" rel="stylesheet"/>
     <link rel="stylesheet" href="aos-master/dist/aos.css"/>
     <link rel="icon" href="media/imgs/icon.png">
     <title>Santhiago</title>
   </head>
   <body>
-    
+
     <div id="header" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
       <div class="glitch" data-text="SANTHIAGO">
         <a href="it.html" class="link">SANTHIAGO</a>
@@ -44,7 +45,7 @@
       data-aos-easing="ease-in-sine">
       </div>
     </div>
-    
+
     <div class="scrolldowntext"
     data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
       <a href="#arts" class="link">scorri verso il basso</a>
@@ -57,7 +58,7 @@
         </div>
       </div>
     </div>
-    
+
     <div id="arts">
       <div id="artsection">
         <div id="artleft" data-aos="fade-right" data-aos-duration="1500"></div>
@@ -80,7 +81,7 @@
           </p>
           <p>Materiali: legno, alluminio, policarbonato, acrilico.</p>
           <p>Misure: 180 x 80 x 3,5 cm</p>
-        </div> 
+        </div>
       </div>
       <div class="blank"></div>
       <div id="artsection">
@@ -92,7 +93,7 @@
           </p>
           <p>Materiali: foglia d'oro, resina, led su tela doppiata.</p>
           <p>Misure: 150 x 80 x 3,5 cm</p>
-        </div> 
+        </div>
       </div>
       <div class="blank"></div>
       <div id="artsection">
@@ -104,7 +105,7 @@
           </p>
           <p>Materiali: marmorina, polvere d'oro, resina, collanti.</p>
           <p>Misure: 63 x 12 cm</p>
-        </div> 
+        </div>
       </div>
       <div class="blank"></div>
       <div id="artsection">
@@ -116,7 +117,7 @@
           </p>
           <p>Materiali: polistirolo, foglia d'oro, resina, collanti.</p>
           <p>Misure: 18 x 18 cm</p>
-        </div> 
+        </div>
       </div>
       <div class="blank"></div>
       <div id="artsection">
@@ -128,7 +129,7 @@
           </p>
           <p>Materiali: ardesia, polistirolo, acrilico, cera di soia.</p>
           <p>Misure: 32 x 20 x 32 cm</p>
-        </div> 
+        </div>
       </div>
       <div class="blank"></div>
       <div id="artsection">
@@ -140,7 +141,7 @@
           </p>
           <p>Materiali: resina, foglia d'oro, legno, acrilico, acciaio.</p>
           <p>Misure: 75 x 63 x 20 cm</p>
-        </div> 
+        </div>
       </div>
     </div>
  <!-- real 37x33 -->
@@ -158,7 +159,7 @@
         Esposizioni
       </div>
       <div class="expodesc">
-        <ul>  
+        <ul>
           <li><div data-aos="fade-right" data-aos-duration="1500"><div class="underlined underlined--thick">
             Gennaio 2018 “Trittico” presso il ristorante “Ai Navigli“ di Padova
           </div></div></li>
@@ -190,7 +191,7 @@
             Settembre 2021 esposizione permanente presso lo spazio contemporaneo “Tindaci” di Padova
           </div></div></li>
           <li><div data-aos="fade-right" data-aos-duration="1500"><div class="underlined underlined--thick">
-            Ottobre 2021 partecipazione alla Biennale d'arte contemporanea in Veneto presso villa Badoer a Fratta Polesine (RO)  
+            Ottobre 2021 partecipazione alla Biennale d'arte contemporanea in Veneto presso villa Badoer a Fratta Polesine (RO)
           </div></div></li>
         </ul>
       </div>
@@ -206,29 +207,27 @@
           <a class="aig" href="https://www.instagram.com/santhiagoindustry/">santhiagoindustry</a>
         </div>
       </div>
-      <div class="centerig">
-        <div class="fb">
-          <a class="aig" href="https://www.instagram.com/santhiagoindustry/">santhiagoindustry</a>
-        </div>
+      <div style="margin-top: 30px;text-indent: 10px;font-size: .8em">
+          <a class="spancnt" href="https://www.instagram.com/nirellabs/">Creato da Simone Ballerin</a>
       </div>
     </div>
     <div id="footer" data-aos="fade-up" data-aos-duration="1500">
       <a href="it.html">&nbsp;&nbsp;IT</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="en.html">EN</a>
     </div>
-    <div id="up" onclick="location.href='#arts'" data-aos="fade-up" data-aos-duration="1500"> 
+    <div id="up" onclick="location.href='#arts'" data-aos="fade-up" data-aos-duration="1500">
     </div>
     <script src="aos-master/dist/aos.js"></script>
     <script src="js/script.js"></script>
-    <script src="js/particles.js"></script>
+    <!-- <script src="js/particles.js"></script> -->
     <script>
       AOS.init();
-      
-      particlesJS.load('particles-js', 'assets/particles.json', function() {
-      console.log('callback - particles.js config loaded');
-      });
-      
+
+      particlesJS.load('particles-js', 'assets/particles.json',
+          function(){
+              console.log('particles.json loaded');
+          });
       $(".glitchLow").click(function() {
-        window.location = $(this).find("a").attr("href"); 
+        window.location = $(this).find("a").attr("href");
         return false;
       });
 
@@ -244,4 +243,3 @@
     </script>
   </body>
 </html>
-
